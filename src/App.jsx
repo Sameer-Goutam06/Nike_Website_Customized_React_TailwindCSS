@@ -1,30 +1,31 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-// import Main from './components/main'//no issues with file casing
+import {Hero,PopularProducts,SuperQuality,SpecialOffers,Services,CustomerReviews,Subscribe,Footer} from "./sections/SectionsImporter"
+import Navbar from './components/Navbar'
 export default function App(){
   return(
     <main>  
-        Nav
+        <Navbar/>
       <section className='xl:padding-1 wide:padding-r padding-b'>
-        Hero
+        <Hero/>
       </section>
       <section className="padding">  
-        Popular Products        
+        <PopularProducts/>        
       </section>
       <section className="padding">  
-        Super Quality    
+        <SuperQuality/>    
       </section>
       <section className="padding">  
-        Services     
+        <Services/>     
       </section>
       <section className="padding">  
-        Customer Reviews      
+        <CustomerReviews/>      
       </section> 
       <section className="padding">  
-        Subscribe       
+        <Subscribe/>       
       </section>
       <section className="padding">  
-        Footer       
+        <Footer/>       
       </section>
     </main>
   )
